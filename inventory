@@ -1,0 +1,11 @@
+[router-ods]
+ods ansible_host=192.168.123.80 ansible_user=admin ansible_password=admin]
+
+[router-leaf1]
+leaf1 ansible_host=192.168.123.90 ansible_user=admin ansible_password=admin]
+
+[router-tele]
+tele ansible_host=192.168.123.100 ansible_user=admin ansible_password=admin]
+
+[router-ict]
+ict ansible_host=192.168.123.90 ansible_user=admin ansible_password=admin]

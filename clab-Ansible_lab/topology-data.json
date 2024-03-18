@@ -1,0 +1,193 @@
+{
+  "name": "Ansible_lab",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab_basic_custom_mgmt",
+        "bridge": "br-0714db46b03a",
+        "ipv4-subnet": "192.168.123.0/24",
+        "ipv4-gw": "192.168.123.1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "ict": {
+      "index": "0",
+      "shortname": "ict",
+      "longname": "clab-Ansible_lab-ict",
+      "fqdn": "ict.Ansible_lab.io",
+      "group": "",
+      "labdir": "/home/SHERNET/barbecam/Documents/Sheridan/Ansible-lab/clab-Ansible_lab/ict",
+      "kind": "ceos",
+      "image": "sebbycorp/ceosimage:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "192.168.123.110",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:84:2c:85",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-0714db46b03a",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/SHERNET/barbecam/Documents/Sheridan/Ansible-lab/clab-Ansible_lab/ict",
+        "clab-node-name": "ict",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/SHERNET/barbecam/Documents/Sheridan/Ansible-lab/lab_ansible.yaml",
+        "containerlab": "Ansible_lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "leaf1": {
+      "index": "1",
+      "shortname": "leaf1",
+      "longname": "clab-Ansible_lab-leaf1",
+      "fqdn": "leaf1.Ansible_lab.io",
+      "group": "",
+      "labdir": "/home/SHERNET/barbecam/Documents/Sheridan/Ansible-lab/clab-Ansible_lab/leaf1",
+      "kind": "ceos",
+      "image": "sebbycorp/ceosimage:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "192.168.123.90",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:1f:16:fe",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-0714db46b03a",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/SHERNET/barbecam/Documents/Sheridan/Ansible-lab/clab-Ansible_lab/leaf1",
+        "clab-node-name": "leaf1",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/SHERNET/barbecam/Documents/Sheridan/Ansible-lab/lab_ansible.yaml",
+        "containerlab": "Ansible_lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "ods1": {
+      "index": "2",
+      "shortname": "ods1",
+      "longname": "clab-Ansible_lab-ods1",
+      "fqdn": "ods1.Ansible_lab.io",
+      "group": "",
+      "labdir": "/home/SHERNET/barbecam/Documents/Sheridan/Ansible-lab/clab-Ansible_lab/ods1",
+      "kind": "ceos",
+      "image": "sebbycorp/ceosimage:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "192.168.123.80",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:fe:33:93",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-0714db46b03a",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/SHERNET/barbecam/Documents/Sheridan/Ansible-lab/clab-Ansible_lab/ods1",
+        "clab-node-name": "ods1",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/SHERNET/barbecam/Documents/Sheridan/Ansible-lab/lab_ansible.yaml",
+        "containerlab": "Ansible_lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "tele": {
+      "index": "3",
+      "shortname": "tele",
+      "longname": "clab-Ansible_lab-tele",
+      "fqdn": "tele.Ansible_lab.io",
+      "group": "",
+      "labdir": "/home/SHERNET/barbecam/Documents/Sheridan/Ansible-lab/clab-Ansible_lab/tele",
+      "kind": "ceos",
+      "image": "sebbycorp/ceosimage:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "192.168.123.100",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:07:72:a1",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-0714db46b03a",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/SHERNET/barbecam/Documents/Sheridan/Ansible-lab/clab-Ansible_lab/tele",
+        "clab-node-name": "tele",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/SHERNET/barbecam/Documents/Sheridan/Ansible-lab/lab_ansible.yaml",
+        "containerlab": "Ansible_lab"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "ods1",
+        "interface": "eth1_1",
+        "mac": "aa:c1:ab:b9:ae:98",
+        "peer": "z"
+      },
+      "z": {
+        "node": "leaf1",
+        "interface": "eth1_1",
+        "mac": "aa:c1:ab:92:38:db",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "ods1",
+        "interface": "eth2_1",
+        "mac": "aa:c1:ab:9f:8d:12",
+        "peer": "z"
+      },
+      "z": {
+        "node": "tele",
+        "interface": "eth1_1",
+        "mac": "aa:c1:ab:e0:c3:10",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "tele",
+        "interface": "eth2_1",
+        "mac": "aa:c1:ab:d1:e4:aa",
+        "peer": "z"
+      },
+      "z": {
+        "node": "ict",
+        "interface": "eth2_1",
+        "mac": "aa:c1:ab:9d:e8:ad",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "ict",
+        "interface": "eth1_1",
+        "mac": "aa:c1:ab:a3:92:03",
+        "peer": "z"
+      },
+      "z": {
+        "node": "leaf1",
+        "interface": "eth2_1",
+        "mac": "aa:c1:ab:38:82:d4",
+        "peer": "a"
+      }
+    }
+  ]
+}

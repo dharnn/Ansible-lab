@@ -1,0 +1,25 @@
+#File for Configure OSPF Routing Protocol
+---
+- name: Configure OSPF Routing Protocol
+  hosts: AristaDevices
+  gather_facts: no
+  vars:
+    ospf_networks:
+      - network: 192.168.123.0/24
+        area: 0
+
+  tasks:
+    - name: Ensure OSPF is enabled on routers
+      arista.eos_config:
+        lines:
+          - router ospf 1
+          - network {{ item.network }} area {{ item.area }}
+        provider:
+          host: "{{ ansible_host }}"
+          username: "{{ ansible_username }}"
+          password: "{{ ansible_password }}"
+          transport: eapi
+      with_items: "{{ ospf_networks }}"
+
+  vars_files:
+    - inventory.yaml

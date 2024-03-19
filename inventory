@@ -1,18 +1,5 @@
-all:
-  hosts:
-    ods1:
-      ansible_host: 192.168.123.80
-      ansible_user: admin
-      ansible_ssh_pass: admin
-    leaf1:
-      ansible_host: 192.168.123.90
-      ansible_user: admin
-      ansible_ssh_pass: admin
-    tele:
-      ansible_host: 192.168.123.100
-      ansible_user: admin
-      ansible_ssh_pass: admin
-    ict:
-      ansible_host: 192.168.123.110
-      ansible_user: admin
-      ansible_ssh_pass: admin
+[Routers]
+192.168.123.80
+192.168.123.90
+192.168.123.100
+192.168.123.110

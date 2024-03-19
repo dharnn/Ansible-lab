@@ -1,0 +1,30 @@
+#File for nodes config
+---
+name: Ansible_lab
+
+mgmt:
+  network: clab_basic_custom_mgmt
+  ipv4-subnet: 192.168.123.0/24
+
+topology:
+  kinds:
+    ceos:
+      image: sebbycorp/ceosimage:latest
+  defaults:
+    kind: ceos
+    memory: 2Gb
+  nodes:
+    ods1:
+      mgmt-ipv4: 192.168.123.80
+    leaf1:
+      mgmt-ipv4: 192.168.123.90
+    tele:
+      mgmt-ipv4: 192.168.123.100
+    ict:
+      mgmt-ipv4: 192.168.123.110
+
+  links:
+    - endpoints: ["ods1:eth1_1", "leaf1:eth1_1"]
+    - endpoints: ["ods1:eth2_1", "tele:eth1_1"]
+    - endpoints: ["tele:eth2_1", "ict:eth2_1"]
+    - endpoints: ["ict:eth1_1", "leaf1:eth2_1"]

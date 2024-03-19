@@ -1,0 +1,40 @@
+! Startup-config last modified at Mon Mar 11 18:26:22 2024 by root
+! device: tele (cEOSLab, EOS-4.31.1F-34556000.4311F (engineering build))
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$sKk9evVLL1BKoSlp$fjxeJkJlnCELSVSwB73WU48L7QInayaFKETURA8nQR7m82BwSUtUAltPs5sib2Y.VCO1YU3t4c80zaw3lwqHs/
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname tele
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+management api http-commands
+   no shutdown
+!
+management api gnmi
+   transport grpc default
+!
+management api netconf
+   transport ssh default
+!
+interface Ethernet1/1
+!
+interface Ethernet2/1
+!
+interface Management0
+   ip address 192.168.123.100/24
+!
+no ip routing
+!
+ip route 0.0.0.0/0 192.168.123.1
+!
+end

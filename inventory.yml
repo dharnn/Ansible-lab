@@ -1,0 +1,21 @@
+# Cameron's Inventory.yaml file
+
+AristaDevices:
+  hosts:
+    ods1:
+      ansible_host: 192.168.123.80
+      username: admin
+      password: admin
+    leaf1:
+      ansible_host: 192.168.123.90
+      username: admin
+      password: admin
+    tele:
+      ansible_host: 192.168.123.100
+      username: admin
+      password: admin
+    ict:
+      ansible_host: 192.168.123.110
+      username: admin
+      password: admin
+
